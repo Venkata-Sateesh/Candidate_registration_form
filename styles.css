@@ -116,3 +116,6 @@ input[type="password"]:hover + p {
   display: inline;
   background-color: #25cabf;
 }
+fieldset:hover {
+  box-shadow: 10px 40px 40px rgb(218, 218, 8);
+}
