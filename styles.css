@@ -1,0 +1,118 @@
+body {
+  background: #3ab4ac;
+  background: linear-gradient(
+    90deg,
+    rgba(58, 180, 172, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
+* {
+  @import url("https://fonts.cdnfonts.com/css/google-sans");
+  font-family: "Product Sans", sans-serif;
+  font-family: "Product Sans Thin", sans-serif;
+  font-family: "Product Sans Light", sans-serif;
+  font-family: "Product Sans Medium", sans-serif;
+  font-family: "Product Sans Black", sans-serif;
+}
+fieldset {
+  border: 5px solid black;
+  border-radius: 20px;
+  width: 600px;
+}
+input:required {
+  border: 3px solid red;
+}
+input:read-only {
+  background-color: blue;
+  color: aliceblue;
+  /*border: 3px solid rgb(247, 8, 8);*/
+}
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+  height: 20px;
+  width: 20px;
+}
+input[type="radio"]:checked + label,
+input[type="checkbox"]:checked + label {
+  color: chartreuse;
+}
+input[type="submit"],
+input[type="reset"] {
+  border: 3px solid rgba(214, 7, 87, 0.877);
+  border-radius: 30px;
+}
+select {
+  background-color: rgb(243, 155, 46);
+  border-radius: 20px;
+  cursor: pointer;
+}
+option:nth-child(odd) {
+  background-color: rgb(190, 134, 241);
+}
+option:nth-child(even) {
+  background-color: rgb(226, 61, 94);
+}
+input[type="radio"] + label,
+input[type="radio"],
+input[type="checkbox"] + label,
+input[type="checkbox"] {
+  cursor: pointer;
+}
+input:focus {
+  background-color: black;
+  color: aliceblue;
+}
+
+h1:hover {
+  background: #3a50b4;
+  background: linear-gradient(
+    90deg,
+    rgba(58, 80, 180, 1) 0%,
+    rgb(238, 44, 238) 11%,
+    rgb(218, 218, 8) 23%,
+    rgb(247, 164, 22) 35%,
+    rgba(253, 29, 29, 1) 41%,
+    rgba(252, 106, 50, 1) 65%,
+    rgba(252, 78, 159, 1) 74%,
+    rgba(252, 56, 245, 1) 79%,
+    rgba(252, 147, 61, 1) 92%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  background-clip: text;
+  color: transparent;
+}
+img {
+  display: none;
+}
+input[type="email"]:focus:valid ~ img#valid,
+input[type="tel"]:focus:valid ~ img#valid,
+input[type="password"]:focus:valid ~ img#valid {
+  display: inline;
+  height: 20px;
+  width: 20px;
+}
+input[type="email"]:focus:invalid ~ img#invalid,
+input[type="tel"]:focus:invalid ~ img#invalid,
+input[type="password"]:focus:invalid ~ img#invalid {
+  display: inline;
+  height: 20px;
+  width: 20px;
+}
+textarea:focus {
+  background-color: black;
+  color: aliceblue;
+}
+input[type="tel"] + p,
+input[type="email"] + p,
+input[type="text"] + p,
+input[type="password"] + p {
+  display: none;
+}
+input[type="tel"]:hover + p,
+input[type="email"]:hover + p,
+input[type="text"]:hover + p,
+input[type="password"]:hover + p {
+  display: inline;
+  background-color: #25cabf;
+}
