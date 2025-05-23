@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login form for students</title>
+  </head>
+  <body>
+    <h1>candidate registration form</h1>
+    <link rel="stylesheet" href="styles.css">
+    <fieldset>
+      <legend>Personal Details:</legend>
+      <form action="response.html" target="_blank">
+        <table>
+          <tr>
+            <td><label> First Name: </label></td>
+            <td>
+              <input
+                type="text"
+                name="FN"
+                placeholder="Ex:Venkata"
+                minlength="5"
+                maxlength="20"
+                required
+              />
+              <p>Enter your first name</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Last Name: </label></td>
+            <td>
+              <input
+                type="text"
+                name="FN"
+                placeholder="Ex:Sateesh"
+                minlength="5"
+                maxlength="20"
+                
+              />
+              <p>Enter your last name</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Mobile number: </label></td>
+            <td>
+              <input
+                type="tel"
+                name="mob"
+                placeholder="Ex:xxxxxxxx"
+                minlength="10"
+                maxlength="10"
+                required
+              />
+              <p>Enter your mobile number</p>
+              <img src="yes.jpg" id="valid" alt="">
+              <img src="no.jpg" id="invalid" alt="">
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Email: </label></td>
+            <td>
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="Ex:Sateesh@gmail.com"
+              /><p>Enter your email</p><img src="yes.jpg" id="valid" alt="">
+              <img src="no.jpg" id="invalid" alt="">
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Password: </label></td>
+            <td>
+              <input
+                type="password"
+                name="password"
+                placeholder="min 8 characters"
+                minlength="8"
+                maxlength="15"
+                required
+              /><p>Enter the password</p><img src="yes.jpg" id="valid" alt="">
+              <img src="no.jpg" id="invalid" alt="">
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Confirm Password</label></td>
+            <td><input type="password" placeholder="*******" minlength="8"
+                maxlength="15"required /><p>Enter to confirm the password</p><img src="yes.jpg" id="valid" alt="">
+              <img src="no.jpg" id="invalid" alt=""></td>
+          </tr>
+          <tr>
+            <td><label for="">Date Of Birth: </label></td>
+            <td><input type="date" name="dob"  required/></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="">Gender: </label>
+            </td>
+            <td>
+              <input type="radio" name="Gender" /><label for="">Male</label>
+              <input type="radio" name="Gender" /><label for="">Female</label>
+              <input type="radio" name="Gender" /><label for="">Others</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Select country</label></td>
+            <td>
+              <select name="country" id="">
+                <option value="">India</option>
+                <option value="">USA</option>
+                <option value="">Germany</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Upload Picture</label></td>
+            <td><input type="file" name="pic" /><br /></td>
+          </tr>
+          <tr>
+            <td><input type="reset" /></td>
+          </tr>
+        </table>
+      
+    </fieldset>
+    <fieldset>
+      <legend>Course Details:</legend>
+      <table>
+        <tr>
+          <td><label for="">Select Course: </label></td>
+          <td>
+            <select name="course" id="">
+              <option value="">Java Full Stack</option>
+              <option value="">Python Full Stack</option>
+              <option value="">Testing</option>
+              <option value="">Cyber Security</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="">Delivery Mode</label>
+          </td>
+          <td>
+            <input type="checkbox" name="offline" /><label for="">Offline</label>
+            <input type="checkbox" name="online" /><label for="">Online</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="">Comments</label>
+          </td>
+        </tr>
+        <tr>
+          <td><textarea rows="5" cols="30"></textarea></td>
+        </tr>
+      </table>
+    </fieldset><br>
+    <input
+      type="submit"
+    />
+      </form>
+  </body>
+</html>
